@@ -82,7 +82,7 @@ def perform_trial(time, field):
 if __name__ == '__main__':
     drunk = Drunk('Test Simpson')
     for i in range(3):
+        print('Iteration i {}'.format(i))
         field = Field(drunk, Location(0, 0))
         distances = perform_trial(500, field)
-
-    print(distances)
+        print(distances)
